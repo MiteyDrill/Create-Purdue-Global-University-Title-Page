@@ -9,7 +9,10 @@ Installation (Windows)
 Download the file to your local environment
 run 'pip install -r requirements.txt' in the local environment via Command Prompt or other command line. (Make sure your command prompt is in the same file directory as the script).
 
-run script 'python p.py'
+How to Use
+-------------------
+
+run the script 'python p.py'
 
 Required information will be prompted. 
 
