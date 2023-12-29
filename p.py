@@ -41,7 +41,6 @@ title_run.bold = True
 title_run.font.size = Pt(12)
 
 doc.add_paragraph("")  # This adds an empty line (newline).
-doc.add_paragraph("")  # This adds an empty line (newline).     
 
 # Author(s)
 author = input("Your Name: ")
@@ -60,10 +59,9 @@ affiliation_run.font.size = Pt(12)
 affiliation_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
 # Class Name:
-af1 = input("Class Number i.e (CM220): ")
-af2 = input("Class Subtitle i.e (Digital Rhetorics): ")
+af1 = input("Class i.e (CM220: Digital Rhetorics): ")
 
-affiliation = af1 + ": " + af2
+affiliation = af1
 affiliation_paragraph = doc.add_paragraph(affiliation)
 affiliation_run = affiliation_paragraph.runs[0]
 affiliation_run.font.name = 'Times New Roman'
@@ -86,18 +84,38 @@ date_run.font.name = 'Times New Roman'
 date_run.font.size = Pt(12)
 date_paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
+# Content Page Break
+doc.add_page_break()
+
+# Content Section
+content_section = doc.add_paragraph("Content")
+content_section.runs[0].font.size = Pt(12)
+
+# Content Page Break
+doc.add_page_break()
+
+# References Section
+references_section = doc.add_paragraph("References")
+references_section.alignment = WD_ALIGN_PARAGRAPH.CENTER
+references_section.runs[0].bold = True
+references_section.runs[0].font.size = Pt(12)
+
+# Set paragraph indentation to hanging
+references_section.paragraph_format.first_line_indent = Pt(-12)
+
 ######
 
+document_name = input("File Name (e.g., CS220_Ben_CompetencyAssessment_Part1): ")
 
 # Prompt the user for a custom file path
-custom_file_path = input("Enter the custom file path and filename (e.g., C:/path/to/custom_document.docx): ")
+custom_file_path = input("Enter the custom file path and filename (e.g., C:/xampp3/htdocs/PythonScripts):")
 
 try:
     # Normalize the path for the operating system
     custom_file_path = os.path.normpath(custom_file_path)
 
     # Save the document to the custom file path
-    doc.save(custom_file_path + "/custom_document.docx")
+    doc.save(custom_file_path + "/" + document_name + ".docx")
 
     print(f"Document saved to: {custom_file_path}")
 except Exception as e:
