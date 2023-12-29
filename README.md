@@ -6,8 +6,10 @@ Requirements
 
 Installation (Windows)
 -------------------
-Download the file to your local environment
-run 'pip install -r requirements.txt' in the local environment via Command Prompt or other command line. (Make sure your command prompt is in the same file directory as the script).
+Download the file to your local environment.
+
+Run in the Command Line: 
+'pip install -r requirements.txt' (CD to the same file directory as the downloaded script).
 
 How to Use
 -------------------
@@ -18,11 +20,11 @@ Required information will be prompted.
 
 <img width="631" alt="image" src="https://github.com/MiteyDrill/Create-Purdue-Global-University-Title-Page/assets/18477656/5d6d2fba-a23d-444a-9a0a-9061bc09cc31">
 
-Make sure to have a directory to save the file, you can copy the directory location from the file explorer.
+Prepare a folder location to save your file.
 
 <img width="587" alt="image" src="https://github.com/MiteyDrill/Create-Purdue-Global-University-Title-Page/assets/18477656/afa03873-f944-4176-a97c-45f6fb4232ae">
 
-Your custom document will be created (Make sure to rename the document according to teacher/course requirements).
+Your custom document will be created after the script runs.
 
 <img width="520" alt="image" src="https://github.com/MiteyDrill/Create-Purdue-Global-University-Title-Page/assets/18477656/b43631fc-6e58-490c-8ac7-4cdf11a80fc1">
 
