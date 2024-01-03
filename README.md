@@ -14,7 +14,7 @@ Run in the Command Line:
 How to Use
 -------------------
 
-run the script 'python p.py'
+Run the script 'python p.py' using a command client OR click the `create_doc.sh` file if you can open up the file in a bash client (I use Git Bash).
 
 Required information will be prompted. 
 
