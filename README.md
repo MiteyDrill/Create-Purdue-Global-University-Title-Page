@@ -1,4 +1,4 @@
-# Create a Title Page for a Word Document
+# Generate an APA7 Title Page Word Doc
 
 Requirements
 - Python
